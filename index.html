@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View HAND Raster</title>
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.18.2/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="http://openlayers.org/en/v3.18.2/build/ol.js"></script>
+    
+    <style>
+      .slider-width
+      {
+          width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rel">
+      <div id="map" class="map"></div>
+      <table class="controls">
+        <tr>
+          <td>HAND Value</td>
+          <td><span id="handOut"></span>m</td>
+          <td><input class="slider-width" id="hand" type="range" min="0" max="40" value="40"/></td>
+        </tr>
+      </table>
+    </div>
+      <script src="main.js"></script>
+      
+  </body>
+</html>
